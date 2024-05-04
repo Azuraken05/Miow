@@ -1,0 +1,169 @@
+/* Styles for desktop and larger screens */
+.Main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(250px, 1fr));
+    grid-gap: 10px ;
+}
+.Authentacation-form img{
+    width:12%;
+    margin-top: calc(1% + 1vw);
+    margin-left: calc(40% + 4.7vw);
+}
+.Sign-upWelcome{
+    margin-left: calc(40% + 3vw);
+    position: absolute;
+    font-size: 25px;
+    color: #000000; /* Set the color of the label text */
+    font-weight: 700;
+    line-height: 10px;
+    font:'Plus Jakarta Sans';
+}
+
+
+/* Input styles */
+.forms-login{
+    width: 100%;
+    height: auto;
+}
+input[type=user]{
+    width: calc(10% + 20vw);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(20% + 10vw) ;/* Position the inputs under the .svg-container-center */
+    left: calc(50% + 1.5vw);
+    transform: translateX(-50%); /* Center the inputs horizontally */
+    font-size: 12px;
+}
+input[type=text]{
+    width: calc(10% + 20vw);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(30% + 10vw) ;/* Position the inputs under the .svg-container-center */
+    left: calc(50% + 1.5vw);
+    transform: translateX(-50%); /* Center the inputs horizontally */
+    font-size: 12px;
+}
+input[type=password] {
+    width: calc(10% + 20vw);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(40% + 10vw) ;
+    left: calc(50% + 1.5vw);
+    transform: translateX(-50%); /* Center the inputs horizontally */
+    font-size: 12px;
+}
+input[type=cpassword] {
+    width: calc(10% + 20vw);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(50% + 10vw) ;
+    left: calc(50% + 1.5vw);
+    transform: translateX(-50%); /* Center the inputs horizontally */
+    font-size: 12px;
+}
+.CPassword, .Password, .Email, .Username {
+    position: absolute;
+    font-size: 12px;
+    color: #000000; /* Set the color of the label text */
+    font-weight: 700;
+}
+
+.Username {
+    top: calc(20% + 9vw); /* Adjust top position based on input field */
+    left: calc(87% - 50vw); /* Adjust left position based on input field */
+}
+
+.Email {
+    top: calc(30% + 9vw); /* Adjust top position based on input field */
+    left: calc(87% - 50vw); /* Adjust left position based on input field */
+}
+
+.Password {
+    top: calc(40% + 9vw); /* Adjust top position based on input field */
+    left: calc(87% - 50vw); /* Adjust left position based on input field */
+}
+
+.CPassword {
+    top: calc(50% + 9vw); /* Adjust top position based on input field */
+    left: calc(87% - 50vw); /* Adjust left position based on input field */
+}
+
+.Password a:hover, .form-bottom a:hover{
+    color: #4B4069;
+}
+.submit{
+    position: absolute;
+    width: calc(10% + 20vw);
+    height: 40px;
+    top: calc(60% + 11vw) ;
+    left: calc(35% + 1.5vw);
+    gap: 0px;
+    border-radius: 12px 12px 12px 12px;
+    opacity: 0px;
+    background-color: #A070A8;
+    
+}
+.password-input-container input {
+    padding-right: 30px; /* Adjust as needed to accommodate the icon */
+}
+
+.password-input-container i {
+    position: absolute;
+    top: calc(45% + 11.5vw) ;
+    right: calc(20% + 10.5vw); /* Adjust the position of the icon */
+    cursor: pointer;
+}
+
+.submit a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #FFFFFF; /* Set the color of the label text */
+    font-family: Inter;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form-bottom {
+    font-size: 1.2vw;
+    position: absolute;
+    top: calc(480px + 10%);
+    left: calc(49% + 2.4vw);
+    color: #747171;
+    transform: translateX(-50%);
+}
+
+.form-bottom a {
+    text-decoration: none;
+    color: #A070A8;
+    font-weight: 700;
+    cursor: pointer;
+}
+.link-left {
+    margin-right: 14vw; /* Adjust this value to increase or decrease the space */
+}
+.link-right {
+    margin-left: 0.4vw; /* Adjust this value to increase or decrease the space */
+}
+
+
+/* Media query for smaller screens */

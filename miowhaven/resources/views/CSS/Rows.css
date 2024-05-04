@@ -1,0 +1,42 @@
+:root{
+    --card_width: 250px;
+    --card-border-radius: 16px;
+    --row-increment: 10px;
+    --card-small: 26;
+    --card-medium: 33;
+    --card-large: 45;
+}
+
+.pin_container{
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row-increment);
+    justify-content: center;
+    background-color: transparent;
+}
+
+.card{
+    padding: 0px;
+    margin: 15px 10px;
+    border-radius: var(--card-border-radius);
+    background-color: white;
+}
+
+.card_small{
+    grid-row-end: span var(--card-small);
+}
+
+.card_medium{
+    grid-row-end: span var(--card-medium);
+}
+
+.card_large{
+    grid-row-end: span var(--card-large);
+}

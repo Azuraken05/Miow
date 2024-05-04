@@ -1,0 +1,134 @@
+.svg-Fcontainer {
+    position: absolute;
+    top: 40%; /* Position the container at the vertical center */
+    left: 50%; /* Position the container at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the container */
+    width: 90%; /* Set the width of the rectangle */
+    max-width: 1390px; /* Set maximum width */
+    height: 340px; /* Set the height of the rectangle */
+    background-color: rgba(153, 132, 209, 0.8); /* Set the background color to an RGBA color */
+    overflow: hidden; /* Ensure content doesn't overflow outside the container */
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .carousel,
+  .slides,
+  .slide {
+    height: 100%; /* Adjust the height of the carousel */
+    display: flex;
+    align-items: center;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 250px; /* Ensure the slide takes full height of the container */
+    margin: 0 0.5rem;
+    background-color: #f0f0f0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: hidden;
+    margin: 0 auto; /* Center the slides horizontally */
+    transition: transform 0.5s ease; /* Add transition effect for smooth sliding */
+    width: 100%; /* Ensure the slides take full width of the container */
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 200px; /* Set the width of each slide */
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+  
+  /* Buttons */
+  
+  .carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none;
+    border-radius: 50%;
+    width: 60px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* Ensure buttons are above other content */
+  }
+  
+  .carousel-button svg {
+    width: 24px; /* Adjust icon size */
+    height: 24px; /* Adjust icon size */
+    fill: #fff; /* Icon color */
+  }
+  
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+  }
+  
+  .carousel-button.hidden {
+    display: flex; /* Override hidden class */
+  }
+  
+  .carousel-button.prev {
+    left: 10px; /* Adjust left position for previous button */
+  }
+  
+  .carousel-button.next {
+    right: 10px; /* Adjust right position for next button */
+  }
+  .text-overlay {
+    position: absolute; /* Position the overlay absolutely */
+    top: 0; /* Position at the top of the image */
+    left: 0; /* Position at the left of the image */
+    width: 100%; /* Cover the entire width of the image */
+    height: 100%; /* Cover the entire height of the image */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    padding: 10px; /* Add padding for text */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    display: flex; /* Align text vertically and horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .slide:hover .text-overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .slide-title {
+    margin: 0; /* Remove margin for title */
+    font-size: 1.2rem; /* Set title font size */
+  }
+  
+  .slide-description {
+    margin: 5%; /* Remove margin for description */
+  }
